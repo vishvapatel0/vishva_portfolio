@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 96%; /* Very Light Cool Gray */
+    --foreground: 220 25% 25%; /* Dark Desaturated Blue/Charcoal */
+
+    --card: 220 20% 99%; /* Off-White, slightly lighter than background */
+    --card-foreground: 220 25% 25%; /* Same as main foreground */
+
+    --popover: 220 20% 98%; /* Similar to card */
+    --popover-foreground: 220 25% 25%;
+
+    --primary: 210 60% 50%; /* Calm Muted Blue (Fjord Blue) */
+    --primary-foreground: 210 40% 98%; /* Very Light Gray/White */
+
+    --secondary: 180 40% 45%; /* Soft Desaturated Teal */
+    --secondary-foreground: 180 40% 95%; /* Very Light Teal/Gray */
+
+    --muted: 220 15% 80%; /* Light Grayish Blue */
+    --muted-foreground: 220 10% 45%; /* Medium Grayish Blue */
+
+    --accent: 25 70% 55%; /* Warm Muted Terracotta/Orange */
+    --accent-foreground: 25 100% 97%; /* Very Light Cream/Orange */
+
+    --destructive: 0 70% 55%; /* Bright Red (consistent) */
+    --destructive-foreground: 0 0% 100%; /* White (consistent) */
+
+    --border: 220 15% 85%; /* Light Gray Border */
+    --input: 220 15% 90%; /* Slightly darker than border for Input */
+    --ring: 210 60% 55%; /* Primary for ring */
+
+    --radius: 0.5rem;
+
+    /* Chart colors adapted for a lighter theme */
+    --chart-1: 210 60% 50%; /* Primary Blue */
+    --chart-2: 180 40% 50%; /* Secondary Teal */
+    --chart-3: 25 70% 60%;  /* Accent Terracotta */
+    --chart-4: 195 55% 50%; /* Another shade of Blue */
+    --chart-5: 40 80% 60%;  /* Muted Gold/Yellow */
+
+    /* Sidebar colors adapted for a lighter theme */
+    --sidebar-background: 220 25% 92%; /* Slightly darker light gray */
+    --sidebar-foreground: 220 25% 30%;
+    --sidebar-primary: 210 60% 45%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 180 40% 40%;
+    --sidebar-accent-foreground: 180 40% 95%;
+    --sidebar-border: 220 15% 80%;
+    --sidebar-ring: 210 60% 50%;
+
+    /* New Skill Bubble Colors for Nordic Light Theme */
+    --skill-color-1-bg: 160 50% 60%; /* Soft Mint Green */
+    --skill-color-1-fg: 160 50% 15%; /* Dark Mint Green text */
+    --skill-color-2-bg: 30 60% 70%;  /* Pale Peach */
+    --skill-color-2-fg: 30 60% 20%;  /* Dark Peach text */
+    --skill-color-3-bg: 200 50% 65%; /* Powder Blue */
+    --skill-color-3-fg: 200 50% 20%; /* Dark Powder Blue text */
+    --skill-color-4-bg: 50 65% 70%; /* Light Canary Yellow */
+    --skill-color-4-fg: 50 65% 20%; /* Dark Canary Yellow text */
+  }
+
+  .dark {
+    /* Keeping the Cyber Glow for .dark if user implements a toggle later, or it can be removed */
+    --background: 220 25% 12%;
+    --foreground: 210 30% 85%;
+
+    --card: 220 25% 16%;
+    --card-foreground: 210 30% 85%;
+
+    --popover: 220 25% 14%;
+    --popover-foreground: 210 30% 85%;
+
+    --primary: 175 80% 45%;
+    --primary-foreground: 220 25% 10%;
+
+    --secondary: 260 60% 55%;
+    --secondary-foreground: 260 100% 95%;
+
+    --muted: 220 20% 25%;
+    --muted-foreground: 210 20% 65%;
+
+    --accent: 330 85% 60%;
+    --accent-foreground: 330 100% 97%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 30%;
+    --input: 220 20% 20%;
+    --ring: 175 80% 50%;
+    
+    --chart-1: 175 70% 50%;
+    --chart-2: 260 70% 60%;
+    --chart-3: 330 75% 65%;
+    --chart-4: 200 80% 55%;
+    --chart-5: 45 90% 55%;
+
+    --sidebar-background: 220 25% 10%;
+    --sidebar-foreground: 210 30% 80%;
+    --sidebar-primary: 175 80% 50%;
+    --sidebar-primary-foreground: 220 25% 5%;
+    --sidebar-accent: 260 60% 50%;
+    --sidebar-accent-foreground: 260 100% 90%;
+    --sidebar-border: 220 20% 25%;
+    --sidebar-ring: 175 80% 55%;
+
+    --skill-color-1-bg: 145 70% 45%;
+    --skill-color-1-fg: 145 100% 95%;
+    --skill-color-2-bg: 30 90% 55%;
+    --skill-color-2-fg: 30 100% 95%;
+    --skill-color-3-bg: 200 85% 50%;
+    --skill-color-3-fg: 200 100% 95%;
+    --skill-color-4-bg: 55 95% 50%;
+    --skill-color-4-fg: 55 25% 10%;
+  }
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+    box-sizing: border-box; 
+    overflow-x: hidden; 
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  section {
+    @apply w-full py-12 md:py-20 lg:py-24;
+  }
+}
