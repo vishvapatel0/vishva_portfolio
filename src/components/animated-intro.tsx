@@ -146,7 +146,7 @@ export default function AnimatedIntro() {
               3. If using an external URL, ensure the hostname is added to next.config.ts
             */}
             <Image
-              src="https://media.licdn.com/dms/image/v2/D4E03AQELgBEQ74PPDA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1709721382062?e=1752710400&v=beta&t=HCcFgehoULqdC2YpGx5It4f2QFMS7-LJ9QjJbyhjIow"
+              src="https://media.licdn.com/dms/image/v2/D4E03AQELgBEQ74PPDA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1709721382062?e=1757548800&v=beta&t=yCUdIe483Fda7iv5sJVtdVIuSYyP9o8kcTP6s7GXulQ"
               alt="Vishva Patel profile picture - a young man in a dark blue shirt and light pants, smiling, outdoors with yellow flowers and green foliage in the background."
               width={320}
               height={320}
